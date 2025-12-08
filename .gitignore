@@ -1,0 +1,7 @@
+.idea
+agent-api/.idea
+agent-api/target
+agent-api/cmd.txt
+terraform/.terraform
+terraform/terraform.lock.hcl
+*.pptx
