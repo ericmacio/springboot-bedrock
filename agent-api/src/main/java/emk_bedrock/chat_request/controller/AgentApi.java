@@ -34,6 +34,8 @@ public class AgentApi {
     @PostMapping(value="/chat", produces="application/json")
     ResponseEntity<UserRequestResponse> postChat(@RequestBody @Valid UserRequest userRequest) {
 
+        LOGGER.info("test git");
+
         // Send a chatRequest event
         ChatRequest chatRequest = chatService.createRequest(userRequest);
         eventService.sendChatRequestEvent(chatRequest);
